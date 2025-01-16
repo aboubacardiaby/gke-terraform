@@ -15,7 +15,7 @@ terraform {
 
 # Terraform Provider Block
 provider "google" {
-  credentials = file("/project/gke-terraform/p1-gke-public-cluster/google.json")
+  credentials = file("/google.json")
   project     = var.gcp_project
   region      = var.gcp_region1
 
