@@ -15,7 +15,8 @@ terraform {
 
 # Terraform Provider Block
 provider "google" {
+  credentials = file("google.json")
   project     = var.gcp_project
   region      = var.gcp_region1
-  credentials = file("google.json")
+
 }
