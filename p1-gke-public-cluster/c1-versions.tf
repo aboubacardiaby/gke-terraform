@@ -8,7 +8,7 @@ terraform {
     }
   }
   backend "gcs" {
-    bucket = "transapibuckets"
+    bucket = "transapibuckets001"
     prefix = "dev/gke-cluster-public"
   }
 }
@@ -17,5 +17,5 @@ terraform {
 provider "google" {
   project     = var.gcp_project
   region      = var.gcp_region1
-  credentials = file("workingpaper01-03be73c7a19b.json")
+  credentials = file("google.json")
 }
